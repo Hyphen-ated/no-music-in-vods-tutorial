@@ -1,6 +1,6 @@
 # How to keep music out of your Twitch VODs
 
-Twitch recently added the ability to have two different audio tracks in your stream, one for the live stream itself and one for the VOD. You can use this to keep music out of your VODs as a layer of protection from DMCA strikes. For example, if you get permission from an artist to use their music on your stream, and they later sign to a major label, that label might DMCA your VODs! Even if you'd win in a theoretical court case, it would still be a problem for your Twitch account. By not including music in your VODs, you avoid this situation.
+Twitch recently added the ability to have two different audio tracks in your stream, one for the live stream itself and one for the VOD/clips. You can use this to keep music out of your VODs as a layer of protection from DMCA strikes. For example, if you get permission from an artist to use their music on your stream, and they later sign to a major label, that label might DMCA your VODs! Even if you'd win in a theoretical court case, it would still be a problem for your Twitch account. By not including music in your VODs and clips, you avoid this situation.
 
 This is a guide to setting that up in a reasonably simple way on a single PC running Windows. If you have a separate stream PC or you already know how to use an audio mixer, you might not need most of this guide.
 
