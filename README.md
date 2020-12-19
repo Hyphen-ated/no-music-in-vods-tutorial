@@ -18,7 +18,7 @@ It's not strictly necessary that your mic goes through Voicemeeter, but doing so
 
 ## Step 1, Voicemeeter Configuration:
 
-Open Voicemeeter, and make it look something like this: https://i.imgur.com/u55l2Db.png
+Open Voicemeeter, and make it look something like this: ![voicemeeter](/img/voicemeeter.png)
 
 I have circled the relevant things in red. 
 
@@ -50,9 +50,10 @@ You should now test this part of the setup. In Voicemeeter, do "Menu -> Restart 
 
 ## Step 4, OBS Configuration:
 
-In OBS, go to Settings -> Output and check the boxes for "Enable Advanced Encoder Settings" and "Twitch VOD Track (Uses Track 2)". Then click into the Audio tab on the left, and set the three Mic/Aux dropdowns to the three Voicemeeter outputs like so: https://i.imgur.com/QZpBDTw.png (these are B1, B2, and B3 from inside Voicemeeter)
+In OBS, go to Settings -> Output and check the boxes for "Enable Advanced Encoder Settings" and "Twitch VOD Track (Uses Track 2)". Then click into the Audio tab on the left, and set the three Mic/Aux dropdowns to the three Voicemeeter outputs like so: ![obs](/img/obs micaux.png)
+(these are B1, B2, and B3 from inside Voicemeeter)
 
-Hit OK, then right click in the OBS audio mixer and do "Unhide All" to make sure the three new sources are visible. Rename them something appropriate like mic, music, and desktop audio. Disable any other audio sources. Then right click in the mixer and go to Advanced Audio Properties. Make it look something like this: https://i.imgur.com/4Q3tW2D.png
+Hit OK, then right click in the OBS audio mixer and do "Unhide All" to make sure the three new sources are visible. Rename them something appropriate like mic, music, and desktop audio. Disable any other audio sources. Then right click in the mixer and go to Advanced Audio Properties. Make it look something like this: ![obs](/img/obsadvanced.png)
 
 The important part is on the right. Each audio source has 6 checkboxes that can be used to include it in tracks 1 through 6. Track 1 is what's played on your live stream. Track 2 is what goes in your VOD and clips. Tracks 3 through 6 are irrelevant. You want all three of the sources we configured to go to track 1, but have music not go to track 2.
 
