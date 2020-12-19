@@ -14,7 +14,8 @@ First, get the following software:
 
 The way this is going to work is we will have your audio split into three streams: your mic, your music, and your game audio. Those streams will all go into Voicemeeter, and from Voicemeeter into OBS and also your headphones. (It's not strictly necessary that the mic goes through Voicemeeter, but doing so will allow you to apply useful effects to your mic, so if you're going to all this trouble you might as well hook that up while we're at it.) 
 
-Step 1, Voicemeeter Configuration:
+## Step 1, Voicemeeter Configuration:
+
 Open Voicemeeter, and make it look something like this: https://i.imgur.com/u55l2Db.png
 
 I have circled the relevant things in red. 
@@ -31,19 +32,22 @@ You might have noticed I have a device at the middle left called "Line In". This
 
 Optional: click A1 by your mic to hear yourself talk, then play with the built-in "intellipan", compressor, noise gate, etc to see if you like what they do to your voice.
 
-Step 2, Audiorouter/Windows Configuration:
+## Step 2, Audiorouter/Windows Configuration:
+
 Figure out what program you want to play music from. (e.g. Spotify, Firefox, Winamp, whatever.) We're going to send audio from this program to a special Voicemeeter input.
 
 If you're on Windows 10, right click the taskbar speaker icon and do "Open Sound settings". Scroll down and click on "App volume and device preferences". Find your music program and set its output to "VoiceMeeter Aux Input (VB-Audio VoiceMeeter AUX VAIO)"
 
 If you're not on Windows 10, open Audiorouter. Find your music program, click the arrow at the bottom, click "Route", and select "VoiceMeeter Aux Input (VB-Audio VoiceMeeter AUX VAIO)". You will have to repeat this step each time you start your stream, or never close audiorouter.
 
-Step 3, Windows Configuration:
+## Step 3, Windows Configuration:
+
 Press the windows key and type "manage audio devices" to open the audio devices window. In the Playback tab, find the entry called "VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)", right click it, and select "Set as Default Device". This will make all the audio from any games or other programs go into voicemeeter. For times when you're not streaming, you'll need to either keep voicemeeter running 24/7 to handle your audio, or you'll have to toggle this setting back and forth between voicemeeter and your actual speakers every time you turn on or off your stream. 
 
 You should now test this part of the setup. In Voicemeeter, do "Menu -> Restart Audio Engine" (also do this if voicemeeter ever seems to freeze up.) The three audio meters in the lower right should now have your mic, your game audio, and your music. Make all three kinds of sounds happen and verify that they're showing up. You should also hear the correct audio in your headphones.
 
-Step 4, OBS Configuration:
+## Step 4, OBS Configuration:
+
 In OBS, go to Settings -> Output and check the boxes for "Enable Advanced Encoder Settings" and "Twitch VOD Track (Uses Track 2)". Then click into the Audio tab on the left, and set the three Mic/Aux dropdowns to the three Voicemeeter outputs like so: https://i.imgur.com/QZpBDTw.png
 
 Hit OK, then right click in the OBS audio mixer and do "Unhide All" to make sure the three new sources are visible. Rename them something appropriate like mic, music, and desktop audio. Disable any other audio sources. Then right click in the mixer and go to Advanced Audio Properties. Make it look something like this: https://i.imgur.com/4Q3tW2D.png
