@@ -2,17 +2,19 @@
 
 Twitch recently added the ability to have two different audio tracks in your stream, one for the live stream itself and one for the VOD/clips. You can use this to keep music out of your VODs as a layer of protection from DMCA strikes. For example, if you get permission from an artist to use their music on your stream, and they later sign to a major label, that label might DMCA your VODs! Even if you'd win in a theoretical court case, it would still be a problem for your Twitch account. By not including music in your VODs and clips, you avoid this situation.
 
-This is a guide to setting that up in a reasonably simple way on a single PC running Windows. If you have a separate stream PC or you already know how to use an audio mixer, you might not need most of this guide (maybe just skip to the last section about OBS configuration to learn about the actual new stuff).
+This is a guide to setting that up in a reasonably simple way on a single PC running Windows. If you have a separate stream PC or you're already pretty much an expert with an audio mixer, you might not need most of this guide (maybe just skip to the last section about OBS configuration to learn about the actual new stuff).
 
 First, get the following software:
 
 1: OBS Studio 26.1 or later. I am unsure if streamlabs OBS supports this feature.
 
-2: Voicemeeter Potato. Unlike most software that asks you to restart your computer, after installing voicemeeter you really do need to restart for it to work. ( https://vb-audio.com/Voicemeeter/potato.htm )
+2: Voicemeeter Potato. Unlike most software that asks you to restart your computer, after installing Voicemeeter you really do need to restart for it to work. ( https://vb-audio.com/Voicemeeter/potato.htm )
 
 3: If you're on a version of Windows older than 10, you need audiorouter. Windows 10 has this functionality built in. ( https://github.com/audiorouterdev/audio-router/releases )
 
-The way this is going to work is we will have your audio split into three streams: your mic, your music, and your game audio. Those streams will all go into Voicemeeter, and from Voicemeeter into OBS and also your headphones. (It's not strictly necessary that the mic goes through Voicemeeter, but doing so will allow you to apply useful effects to your mic, so if you're going to all this trouble you might as well hook that up while we're at it.) 
+The way this is going to work is we will have your audio split into three streams: your mic, your music, and your game audio. Those streams will all go into Voicemeeter, and from Voicemeeter into OBS and also your headphones. The main thing making this need to be so complicated is that you can't use your normal "desktop audio" source in OBS anymore, because it's going to contain the music you're listening to mixed with your game sounds, and those need to be separated. 
+
+It's not strictly necessary that your mic goes through Voicemeeter, but doing so will allow you to apply useful effects to your mic, so if you're going to all this trouble you might as well hook that up while you're at it.
 
 ## Step 1, Voicemeeter Configuration:
 
@@ -42,9 +44,9 @@ If you're not on Windows 10, open Audiorouter. Find your music program, click th
 
 ## Step 3, Windows Configuration:
 
-Press the windows key and type "manage audio devices" to open the audio devices window. In the Playback tab, find the entry called "VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)", right click it, and select "Set as Default Device". This will make all the audio from any games or other programs go into voicemeeter. For times when you're not streaming, you'll need to either keep voicemeeter running 24/7 to handle your audio, or you'll have to toggle this setting back and forth between voicemeeter and your actual speakers every time you turn on or off your stream. 
+Press the windows key and type "manage audio devices" to open the audio devices window. In the Playback tab, find the entry called "VoiceMeeter Input (VB-Audio VoiceMeeter VAIO)", right click it, and select "Set as Default Device". This will make all the audio from any games or other programs go into Voicemeeter. For times when you're not streaming, you'll need to either keep voicemeeter running 24/7 to handle your audio, or you'll have to toggle this setting back and forth between Voicemeeter and your actual speakers every time you turn on or off your stream. 
 
-You should now test this part of the setup. In Voicemeeter, do "Menu -> Restart Audio Engine" (also do this if voicemeeter ever seems to freeze up.) The three audio meters in the lower right should now have your mic, your game audio, and your music. Make all three kinds of sounds happen and verify that they're showing up. You should also hear the correct audio in your headphones.
+You should now test this part of the setup. In Voicemeeter, do "Menu -> Restart Audio Engine" (also do this if Voicemeeter ever seems to freeze up.) The three audio meters in the lower right should now have your mic, your game audio, and your music. Make all three kinds of sounds happen and verify that they're showing up. You should also hear the correct audio in your headphones.
 
 ## Step 4, OBS Configuration:
 
