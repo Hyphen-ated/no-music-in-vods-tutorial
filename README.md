@@ -50,7 +50,7 @@ You should now test this part of the setup. In Voicemeeter, do "Menu -> Restart 
 
 ## Step 4, OBS Configuration:
 
-In OBS, go to Settings -> Output and check the boxes for "Enable Advanced Encoder Settings" and "Twitch VOD Track (Uses Track 2)". Then click into the Audio tab on the left, and set the three Mic/Aux dropdowns to the three Voicemeeter outputs like so: ![obs](/img/obs micaux.png)
+In OBS, go to Settings -> Output and check the boxes for "Enable Advanced Encoder Settings" and "Twitch VOD Track (Uses Track 2)". Then click into the Audio tab on the left, and set the three Mic/Aux dropdowns to the three Voicemeeter outputs like so: ![obs](/img/obsmicaux.png)
 (these are B1, B2, and B3 from inside Voicemeeter)
 
 Hit OK, then right click in the OBS audio mixer and do "Unhide All" to make sure the three new sources are visible. Rename them something appropriate like mic, music, and desktop audio. Disable any other audio sources. Then right click in the mixer and go to Advanced Audio Properties. Make it look something like this: ![obs](/img/obsadvanced.png)
