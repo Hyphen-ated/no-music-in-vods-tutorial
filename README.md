@@ -52,6 +52,6 @@ In OBS, go to Settings -> Output and check the boxes for "Enable Advanced Encode
 
 Hit OK, then right click in the OBS audio mixer and do "Unhide All" to make sure the three new sources are visible. Rename them something appropriate like mic, music, and desktop audio. Disable any other audio sources. Then right click in the mixer and go to Advanced Audio Properties. Make it look something like this: https://i.imgur.com/4Q3tW2D.png
 
-The important part is on the right. Track 1 is for the live stream. Track 2 is for the VOD. You want all three sources to go to track 1, but have music not go to track 2.
+The important part is on the right. Each audio source has 6 checkboxes that can be used to include it in tracks 1 through 6. Track 1 is what's played on your live stream. Track 2 is what goes in your VOD and clips. Tracks 3 through 6 are irrelevant. You want all three of the sources we configured to go to track 1, but have music not go to track 2.
 
-You're done!
+You're done! There's nothing you have to do on Twitch's website itself, but you probably want to do a test stream and verify that the correct audio is going to the correct places.
